@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>CRISPR and Genome Editing</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+  <body style="background-color:#483069";>
+      <div class="container">
+          <div class="menu">
+              <ul>
+                <li class = "logo"><img src="data:image/png;base64,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"></li>
+
+                <li data-tab-target="#what-is">What is CRISPR?</li>
+                <li data-tab-target="#Capabilities">CRISPR Capabilities</li>
+                <li data-tab-target="#ethics">Ethics of Gene Editing</li>
+                <li data-tab-target="#BNW">Aldous Huxley - Brave New World</li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="what-is" data-tab-content class="active">
+                  <div class="banner">
+                    <div class="app-text">
+                      <h1>
+                       What is CRISPR?
+                      </h1>
+                      <h2>CRISPR technology is a simple yet powerful tool for editing genomes.<br> It allows researchers to easily alter DNA sequences and modify gene function.
+                      </h2>
+                      <P>In popular usage, "CRISPR" (pronounced "crisper") is shorthand for "CRISPR-Cas9." CRISPRs are specialized stretches of DNA.<br> The protein Cas9 (or "CRISPR-associated") is an enzyme that acts like a pair of molecular scissors, capable of cutting strands of DNA.
+                      </p>
+                    </div>
+
+
+
+
+                      </div>
+                    </div>
+                  <div class="app-picture">
+                      <img src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/articles/protocols/cell-culture/gene-editing-of-human.jpg">
+                  <div class="small-text">
+                      <h5>
+                        CRISPR technology was adapted from the natural defense mechanisms of<br> bacteria and archaea (the domain of single-celled microorganisms). <br>These organisms use CRISPR-derived RNA and various Cas proteins,<br> including Cas9, to foil attacks by viruses and other foreign bodies. <br>They do so primarily by chopping up and destroying the DNA of a foreign <br>invader. When these components are transferred into other, more complex,<br> organisms, it allows for the manipulation of genes, or "editing."
+                      </h5>
+                </div>
+                <div id="Capabilities" data-tab-content>
+                  <div class="banner">
+                    <div class="app-text2">
+                      <h1>
+                       CRISPR Capabilities
+                      </h1>
+
+                      <P>In the past year alone, dozens of scientific papers from researchers around the world have detailed the results of studies — <br>some promising, some critical — that used CRISPR to snip out and replace unwanted DNA to develop treatments for cancer,<br> HIV, blindness, chronic pain, muscular dystrophy and Huntington's disease, to name a few.
+                      </p>
+                    </div>
+
+
+
+
+                      </div>
+                    </div>
+                  <div class="app-picture">
+                      <img src="">
+
+
+                </div>
+                <div id="ethics" data-tab-content>
+                  <div class="banner">
+                    <div class="app-text3">
+                      <h1>
+                       Ethics of Gene Editing
+                      </h1>
+
+                      <P>Bioethicists and researchers generally believe that human genome editing for reproductive purposes should not be attempted <br> at this time, but that studies that would make gene therapy safe and effective should continue. As of 2014, there were about 40 <br>countries that discouraged or banned research on germline editing, including 15 nations in Western Europe, because of ethical <br>and safety concerns. There is also an international effort led by the US, UK, and China to harmonize regulation of the <br>application of genome editing technologies.
+                      </p>
+                    </div>
+
+
+
+
+                      </div>
+                    </div>
+                  <div class="app-picture">
+                      <img src="">
+                </div>
+                <div id="BNW" data-tab-content>
+                  <div class="banner">
+                    <div class="app-text4">
+                      <h1>
+                       Aldous Huxley - Brave New World
+                      </h1>
+
+                      <P>The novel Brave New World by Aldous Huxley predicted the rise of genome editing, despite being written in 1931. It tells of a <br>future in which genome editing is used to create traits in people, whether good or bad. Because of this, a caste system is<br> created in which members of the lower classes are made to have smaller and physically inferior bodies to the top class.<br> Moving forward, this book is seen as a warning for the future of genome editing. This novel is just one warning among many,<br> and have split the opinions of many, as genome editing and CRISPR advances.
+                      </p>
+                    </div>
+
+
+
+
+                      </div>
+                    </div>
+                  <div class="app-picture">
+                      <img src="">
+              </div>
+              <div class="inspirational-sites">
+
+              </div>
+
+
+
+
+
+
+
+</body>
